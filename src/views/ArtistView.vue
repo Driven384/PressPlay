@@ -28,7 +28,7 @@
   </script>
   
   <template>
-    <MainLayout show-header return>
+    <MainLayout show-header show-return>
       <template v-if="artistData">
         <div class="grid sm:grid-cols-2 gap-4">
           <img class="border-2 border-stone-950" :src="artistData.images[0].url" :alt="artistData.name" />

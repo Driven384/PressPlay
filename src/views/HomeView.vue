@@ -1,7 +1,7 @@
-<script setup lang="ts">
+<script setup>
   import { onBeforeMount } from 'vue';
   import { useRouter } from 'vue-router';
-  import MainLayout from '../components/layouts/MainLayout.vue';
+  import MainLayout from '@/components/layouts/MainLayout.vue';
   import Card from '../components/molecules/CardComponent.vue';
   import { useHeaderStore } from '../stores/store';
 
@@ -18,7 +18,7 @@
     headerStore.setTitle('');
   });
 
-  const goToList = (id: String) => {
+  const goToList = (id) => {
       router.push({ name: 'playlist', params: { id: id } });
   };
 </script>

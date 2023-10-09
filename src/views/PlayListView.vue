@@ -35,7 +35,7 @@
 </script>
   
 <template>
-    <MainLayout show-header return>
+    <MainLayout show-header show-return>
         <Transition>
             <div v-if="loading" role="status" class="flex justify-center">
                 <svg aria-hidden="true" class="w-20 h-20 mr-2 text-[#34898F] animate-spin dark:text-gray-600 fill-[#CD605F]" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -45,17 +45,16 @@
                 <span class="sr-only">Loading...</span>
             </div>
         </Transition>
+
         <Transition>
+          <p v-if="error">Whoops, looks something went wrong</p>
+        </Transition>
 
-            <p v-if="error">Whoops, looks something went wrong</p>
-    </Transition>
-    <Transition name="slide-fade">
-
-        <div v-if="playlistData">
-            <ListItem v-for="item in playlistData.tracks.items" :key="item.track.id" :song="item.track" />
-        </div>
-    </Transition>
-
+        <Transition name="slide-fade">
+          <div v-if="playlistData">
+              <ListItem v-for="item in playlistData.tracks.items" :key="item.track.id" :song="item.track" />
+          </div>
+      </Transition>
     </MainLayout>
 </template>
   
