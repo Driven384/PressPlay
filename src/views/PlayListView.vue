@@ -1,8 +1,8 @@
 <script setup>
     import { ref, onMounted } from 'vue';
-    import { getAccessToken, getList } from '../SpotifyService';
-    import ListItem from '../components/ListItem.vue';
-    import MainLayout from '../components/MainLayout.vue';
+    import { getAccessToken, getList } from '../services/SpotifyService';
+    import ListItem from '../components/molecules/ListItem.vue';
+    import MainLayout from '../components/layouts/MainLayout.vue';
     import { useHeaderStore } from '../stores/store';
     import { useRoute } from 'vue-router';
 
@@ -35,7 +35,7 @@
 </script>
   
 <template>
-    <MainLayout show-header>
+    <MainLayout show-header return>
         <Transition>
             <div v-if="loading" role="status" class="flex justify-center">
                 <svg aria-hidden="true" class="w-20 h-20 mr-2 text-[#34898F] animate-spin dark:text-gray-600 fill-[#CD605F]" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -73,4 +73,4 @@
   transform: translateX(-20px);
   opacity: 0;
 }
-</style>
+</style>../services/SpotifyService

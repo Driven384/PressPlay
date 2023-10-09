@@ -1,7 +1,7 @@
 <script setup lang="ts">
   import { onBeforeMount } from 'vue';
   import { useHeaderStore } from '../stores/store';
-  import MainLayout from '@/components/MainLayout.vue';
+  import MainLayout from '../components/layouts/MainLayout.vue';
 
   const headerStore = useHeaderStore();
 

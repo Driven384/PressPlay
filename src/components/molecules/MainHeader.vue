@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import MenuToggleButton from './MenuToggleButton.vue';
+import MenuToggleButton from '../atoms/MenuToggleButton.vue';
 import { RouterLink } from 'vue-router';
 
 defineProps({

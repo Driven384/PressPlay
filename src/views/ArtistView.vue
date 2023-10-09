@@ -1,7 +1,7 @@
 <script setup>
     import { ref, onMounted } from 'vue';
-    import { getAccessToken, getArtist } from '../SpotifyService';
-    import MainLayout from '../components/MainLayout.vue';
+    import { getAccessToken, getArtist } from '../services/SpotifyService';
+    import MainLayout from '../components/layouts/MainLayout.vue';
     import { useHeaderStore } from '../stores/store';
     import { useRoute } from 'vue-router';
 
@@ -28,14 +28,17 @@
   </script>
   
   <template>
-    <MainLayout show-header>
+    <MainLayout show-header return>
       <template v-if="artistData">
-        <div class="flex flex-wrap gap-2">
-            <div v-for="genre, index in artistData.genres" :key="index" class="p-2 bg-stone-950 text-white text-sm">{{ genre }}</div>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <img class="border-2 border-stone-950" :src="artistData.images[0].url" :alt="artistData.name" />
+          <div class="flex flex-col gap-4">
+            <div class="flex flex-wrap gap-2">
+              <div v-for="genre, index in artistData.genres" :key="index" class="p-2 bg-stone-950 text-white text-sm">{{ genre }}</div>
+            </div>
+            <p>Followers: {{ artistData.followers.total }}</p>
+          </div>
         </div>
-        <p>followers: {{ artistData.followers.total }}</p>
-        <img :src="artistData.images[0].url" :alt="artistData.name" />
       </template>
     </MainLayout>
   </template>
-  

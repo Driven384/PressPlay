@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import MenuButton from './MenuButton.vue';
+    import MenuButton from '../atoms/MenuButton.vue';
     import { ref } from 'vue';
     import { onClickOutside } from '@vueuse/core';
 

@@ -1,5 +1,6 @@
 <script setup lang="ts">
     import gradientImage from '@/assets/gradient.svg';
+    import MainButton from '../atoms/MainButton.vue';
 
     defineProps({
         buttonTitle: String,
@@ -14,9 +15,8 @@
         <div v-if="text" class="mb-8 p-8">
             <p>{{ text }}</p>
         </div>
-        <button 
-            class="absolute -right-[2px] -bottom-[2px] bg-white group-hover/card:bg-stone-950 text-stone-950 group-hover/card:text-white py-2 px-4 border-2 border-stone-950">
-            {{ buttonTitle }}
-        </button>
+        <div class="absolute -right-[2px] -bottom-[2px]">
+            <MainButton :title="buttonTitle" group="card"></MainButton>
+        </div>
     </div>
 </template>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import MainLayout from '@/components/MainLayout.vue';
+import MainLayout from '../components/layouts/MainLayout.vue';
 import { RouterLink } from 'vue-router';
 </script>
 
