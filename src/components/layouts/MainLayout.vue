@@ -10,12 +10,6 @@
         showHeader: {
             type: Boolean
         },
-        toolNav: {
-            type: Boolean
-        },
-        full: {
-            type: Boolean
-        },
         showReturn: {
             type: Boolean
         }
