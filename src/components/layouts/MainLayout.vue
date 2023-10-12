@@ -29,8 +29,8 @@
         <MainNav :isOpen="isMenuOpen" @item-click="closeMenu" />
 
         <main class="container h-max pt-24 pb-24 flex flex-col gap-10">
-            <div>
-                <IconButton v-if="showReturn" icon="arrow-left-long" title="Return to the previous page" @click="router.back()" />
+            <div v-if="showReturn">
+                <IconButton icon="arrow-left-long" title="Return to the previous page" @click="router.back()" />
             </div>
             <slot></slot>
         </main>

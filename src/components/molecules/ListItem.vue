@@ -54,12 +54,6 @@ const playItem = () => {
         </div>
 
         <div class="invisible sm:visible ml-2 mb-2 lg:mb-4 text-sm lg:text-base flex-grow flex justify-end items-end">
-            <!-- <button 
-                class="bg-white hover:bg-stone-950 text-stone-950 hover:text-white p-2 lg:px-4 border-2 border-stone-950 text-sm lg:text-base"
-                @click="goToArtist(song.artists[0].id)"
-            >
-                More about the artist
-            </button> -->
             <MainButton title="More about the artist" @click="goToArtist(song.artists[0].id)"></MainButton>
         </div>
     </div>

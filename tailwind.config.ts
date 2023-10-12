@@ -11,8 +11,13 @@ module.exports = {
         xl: '5rem',
         '2xl': '6rem',
       },
+    },
+    extend: {
+      backgroundImage: {
+        'gradient': "url('/src/assets/gradient.svg')",
+      },
       colors: {
-        primary: {
+        seaSerpent: {
           DEFAULT: '#42c3d3',
           50: '#e2f8fa',
           100: '#b7edf1',
@@ -25,7 +30,7 @@ module.exports = {
           800: '#34898f',
           900: '#2c6565'
         },
-        secondary: {
+        gingerFlower: {
           DEFAULT: '#cf554c',
           50: '#f8ebee',
           100: '#efced3',
@@ -38,12 +43,7 @@ module.exports = {
           800: '#a1403c',
           900: '#8f3a34'
         }
-      }
-    },
-    extend: {
-      backgroundImage: {
-        'gradient': "url('/src/assets/gradient.svg')",
-      }
+      },
     },
   },
   plugins: [],
