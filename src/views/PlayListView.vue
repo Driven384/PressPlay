@@ -72,4 +72,4 @@
   transform: translateX(-20px);
   opacity: 0;
 }
-</style>../services/SpotifyService
+</style>

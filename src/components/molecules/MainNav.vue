@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import MenuButton from '../atoms/MenuButton.vue';
+    import MenuButton from '../buttons/MenuButton.vue';
     import { ref } from 'vue';
     import { onClickOutside } from '@vueuse/core';
 
@@ -16,7 +16,7 @@
     <div 
         ref="menuRef"   
         :class="{
-            'transition-all duration-1000 h-screen mt-1 pt-14 pr-8 fixed z-10 bg-[#FBEDED]': true,
+            'transition-all duration-1000 h-screen mt-1 pt-14 pr-8 fixed z-10 bg-background': true,
             '-left-56 w-56': !isOpen,
             'left-0 w-56 shadow-md': isOpen
         }">

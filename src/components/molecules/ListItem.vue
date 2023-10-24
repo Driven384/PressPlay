@@ -1,7 +1,7 @@
 <script setup>
 import { convertDuration } from '../../helpers/duration';
 import { useRouter } from 'vue-router';
-import MainButton from '../atoms/MainButton.vue';
+import MainButton from '../buttons/MainButton.vue';
 
 defineProps({
     song: {

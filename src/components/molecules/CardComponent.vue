@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import MainButton from '../atoms/MainButton.vue';
+    import MainButton from '../buttons/MainButton.vue';
 
     defineProps({
         buttonTitle: String,

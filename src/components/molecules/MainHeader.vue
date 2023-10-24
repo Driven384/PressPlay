@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import MenuToggleButton from '../atoms/MenuToggleButton.vue';
+import MenuToggleButton from '../buttons/MenuToggleButton.vue';
 import { RouterLink } from 'vue-router';
 
 defineProps({
@@ -14,11 +14,11 @@ defineProps({
 </script>
 
 <template>
-    <header class="fixed w-full flex h-14 shadow-md items-center z-10 bg-[#FBEDED]">
+    <header class="fixed w-full flex h-14 shadow-md items-center z-10 bg-background">
         <div class="flex basis-1/3 items-center h-full ml-2">
             <MenuToggleButton :isOpen="isOpen" @click="$emit('toggle-nav')"></MenuToggleButton>
             <RouterLink to="/"><img alt="PressPlay logo" class="w-20 h-14 py-2" src="@/assets/logo-text.svg" /></RouterLink>
         </div>
-        <div class="flex basis-1/3 justify-center text-2xl text-stone-950">{{ title }}</div>
+        <div class="flex basis-1/3 justify-center text-lg md:text-2xl text-stone-950">{{ title }}</div>
     </header>
 </template>

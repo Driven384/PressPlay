@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
 
 import { mount } from '@vue/test-utils';
-import IconButton from '../atoms/IconButton.vue';
+import IconButton from '../buttons/IconButton.vue';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 describe('IconButton component', () => {

@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { mount } from '@vue/test-utils';
-import MainButton from '../atoms/MainButton.vue';
+import MainButton from '../buttons/MainButton.vue';
 
 describe('MainButton Component', () => {
   it('should render the title prop', () => {

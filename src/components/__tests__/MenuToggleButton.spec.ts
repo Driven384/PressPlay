@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { mount } from '@vue/test-utils';
-import MyButton from '../atoms/MenuToggleButton.vue';
+import MyButton from '../buttons/MenuToggleButton.vue';
 
 describe('MyButton.vue', () => {
     it('renders with isOpen prop set to false', () => {

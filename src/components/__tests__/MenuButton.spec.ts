@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { mount } from '@vue/test-utils';
-import MenuButton from '../atoms/MenuButton.vue';
+import MenuButton from '../buttons/MenuButton.vue';
 import AboutView from '../../views/AboutView.vue';
 import HomeView from '../../views/HomeView.vue';
 import { createRouter, createMemoryHistory } from 'vue-router';

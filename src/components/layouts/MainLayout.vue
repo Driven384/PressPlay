@@ -1,7 +1,7 @@
 <script setup lang="ts">
     import MainHeader from '../molecules/MainHeader.vue';
     import MainNav from '../molecules/MainNav.vue';
-    import IconButton from '../atoms/IconButton.vue';
+    import IconButton from '../buttons/IconButton.vue';
     import { ref } from "vue";
     import { useHeaderStore } from '../../stores/store';
     import { useRouter } from 'vue-router';

@@ -13,10 +13,16 @@ module.exports = {
       },
     },
     extend: {
+      screens: {
+        'xs': '420px',
+      },
       backgroundImage: {
         'gradient': "url('/src/assets/gradient.svg')",
       },
       colors: {
+        background: {
+          DEFAULT: '#FBEDED',
+        },
         seaSerpent: {
           DEFAULT: '#42c3d3',
           50: '#e2f8fa',
